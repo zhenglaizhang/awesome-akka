@@ -13,7 +13,6 @@ trait DB {
 object DataAccess {
   sealed trait Command
   final case class Save(value: String, replyTo: ActorRef[Done]) extends Command
-  final case class Get(replyTo)
 }
 
 object Stash {
