@@ -37,18 +37,19 @@ class Buncher(
   }
 
   def active(buffer: Vector[Buncher.Command]): Behavior[Command] = {
-    //    Behaviors.receiveMessage[Command] {
-    //      case ExcitingMessage(m) =>
-    //        val newBuffer = buffer :+ m
-    //        if (newBuffer.size == maxSize) {
-    //          timers.cancel(TimerKey)
-    ////          target ! Batch(newBuffer)
-    //          idle()
-    //        }
-    //      case Buncher.Timeout =>
-    //        target ! Batch(buffer)
-    //        idle()
     ???
+//    Behaviors.receiveMessage[Command] {
+//      case ExcitingMessage(m) =>
+//        val newBuffer = buffer :+ m
+//        if (newBuffer.size == maxSize) {
+//          timers.cancel(TimerKey)
+//          target ! Batch(newBuffer)
+//          idle()
+//        }
+//      case Buncher.Timeout =>
+//        target ! Batch(buffer)
+//        idle()
+//    }
   }
 }
 
